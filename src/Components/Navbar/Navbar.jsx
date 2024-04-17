@@ -1,4 +1,5 @@
 import logoimg from "../../assets/guvi-logo.svg";
+import "./Navbar.css";
 
 function Navbar() {
   return (
