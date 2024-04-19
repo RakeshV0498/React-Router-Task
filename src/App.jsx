@@ -10,19 +10,20 @@ import NavInternal from "./Components/InternalNav/NavInternal";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <NavInternal />
-      <BrowserRouter>
+    <BrowserRouter>
+      <>
+        <Navbar />
+        <NavInternal />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/FSD" element={<FSDcomp />} />
           <Route path="/DS" element={<DSComp />} />
           <Route path="/CS" element={<CSComp />} />
           <Route path="/CC" element={<CCComp />} />
+          <Route path="*" element={<h3>No Page Found</h3>} />
         </Routes>
-      </BrowserRouter>
-    </>
+      </>
+    </BrowserRouter>
   );
 }
 
