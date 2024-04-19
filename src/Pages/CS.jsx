@@ -1,7 +1,14 @@
+import Card from "../Components/BlogCard/Card";
+import blogData from "../Data";
+
 function CSComp() {
   return (
     <>
-      <h1>CS</h1>
+      {blogData
+        .filter((data) => data.tag === "CS")
+        .map((data) => (
+          <Card key={data.id} {...data} />
+        ))}
     </>
   );
 }
