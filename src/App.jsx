@@ -6,11 +6,13 @@ import FSDcomp from "./Pages/FSD";
 import DSComp from "./Pages/DS";
 import CSComp from "./Pages/CS";
 import CCComp from "./Pages/CC";
+import NavInternal from "./Components/InternalNav/NavInternal";
 
 function App() {
   return (
     <>
       <Navbar />
+      <NavInternal />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
