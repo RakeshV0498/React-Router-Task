@@ -12,7 +12,7 @@ const categories = [
 function NavInternal() {
   return (
     <>
-      <article className="container">
+      <article className="nav-container">
         <section className="nav-internal">
           {categories.map((category) => (
             <Link className="nav-links" key={category.name} to={category.path}>
