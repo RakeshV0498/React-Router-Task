@@ -1,10 +1,12 @@
 .container {
-  margin: 3rem 0;
+  margin-bottom: 3rem;
+  box-shadow: 3px 11px 20px rgba(0, 0, 0, 0.15);
 }
 
 .nav-internal {
   font-size: 2rem;
   font-weight: 700;
+  padding: 3rem;
   display: flex;
   gap: 1.6rem;
   align-items: center;
@@ -14,12 +16,14 @@
 .nav-links {
   text-decoration: none;
   color: #000;
-  padding-bottom: 0.5rem;
+  padding: 0.8rem 1.2rem;
 }
 
 .nav-links:hover,
 .nav-links:focus {
   /* border-bottom: 3px solid #0d   d124; */
+  background-color: #eee;
+  border-radius: 8px;
   text-decoration: 3px underline #0dd124;
   outline: none;
 }
