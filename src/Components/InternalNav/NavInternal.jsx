@@ -11,13 +11,17 @@ const categories = [
 
 function NavInternal() {
   return (
-    <div>
-      {categories.map((category) => (
-        <Link key={category.name} to={category.path}>
-          {category.name}
-        </Link>
-      ))}
-    </div>
+    <>
+      <article className="container">
+        <section className="nav-internal">
+          {categories.map((category) => (
+            <Link className="nav-links" key={category.name} to={category.path}>
+              {category.name}
+            </Link>
+          ))}
+        </section>
+      </article>
+    </>
   );
 }
 
