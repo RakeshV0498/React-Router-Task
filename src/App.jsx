@@ -14,14 +14,16 @@ function App() {
       <>
         <Navbar />
         <NavInternal />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/FSD" element={<FSDcomp />} />
-          <Route path="/DS" element={<DSComp />} />
-          <Route path="/CS" element={<CSComp />} />
-          <Route path="/CC" element={<CCComp />} />
-          <Route path="*" element={<h3>No Page Found</h3>} />
-        </Routes>
+        <article className="blog-container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/FSD" element={<FSDcomp />} />
+            <Route path="/DS" element={<DSComp />} />
+            <Route path="/CS" element={<CSComp />} />
+            <Route path="/CC" element={<CCComp />} />
+            <Route path="*" element={<h3>No Page Found</h3>} />
+          </Routes>
+        </article>
       </>
     </BrowserRouter>
   );
