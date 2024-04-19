@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoimg from "../../assets/guvi-logo.svg";
 import "./Navbar.css";
 
@@ -6,7 +7,9 @@ function Navbar() {
     <>
       <nav className="navbar">
         <section className="logo-container">
-          <img src={logoimg} alt="Guvi logo" className="logo" />
+          <Link to={"/"}>
+            <img src={logoimg} alt="Guvi logo" className="logo" />
+          </Link>
           <h1 className="title">Blog</h1>
           <input
             type="text"
