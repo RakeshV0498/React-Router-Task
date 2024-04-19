@@ -1,0 +1,30 @@
+.container {
+  margin: 3rem 0;
+}
+
+.nav-internal {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 0.5rem;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+  /* border-bottom: 3px solid #0d   d124; */
+  text-decoration: 3px underline #0dd124;
+  outline: none;
+}
+
+.seperator {
+  margin: 2rem;
+  border-bottom: 2px solid #ccc;
+}

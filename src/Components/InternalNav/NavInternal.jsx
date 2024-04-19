@@ -20,6 +20,7 @@ function NavInternal() {
             </Link>
           ))}
         </section>
+        <div className="seperator"></div>{" "}
       </article>
     </>
   );
