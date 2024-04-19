@@ -1,7 +1,14 @@
+import blogData from "../Data";
+import Card from "../Components/BlogCard/Card";
+
 function DSComp() {
   return (
     <>
-      <h1>DS</h1>
+      {blogData
+        .filter((data) => data.tag === "DS")
+        .map((data) => (
+          <Card key={data.id} {...data} />
+        ))}
     </>
   );
 }
